@@ -1,0 +1,17 @@
+body {
+  //font-family: 'helvetica', sans-serif;
+  overflow: hidden;
+}
+
+#canvas-txt {
+  position: absolute;
+  visibility: hidden;
+}
+#canvas-demo {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left:0;
+}
+
