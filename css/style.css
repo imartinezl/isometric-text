@@ -15,3 +15,12 @@ body {
   left:0;
 }
 
+#content {
+	position: relative;
+	width: 500px;
+	z-index: 0;
+}
+canvas {
+	position: absolute;
+	z-index: -1;
+}

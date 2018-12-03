@@ -30,7 +30,7 @@ var conFontHeight = f1.add(con, 'fontHeight', 4, 100).step(1).listen();
 var conFontSize = f1.add(con, 'fontSize',12,30).step(2);
 var conFontColor = f1.addColor(con, 'fontColor');
 var conBackColor = f1.addColor(con, 'backColor');
-f1.open();
+//f1.open();
 
 var f11 = f1.addFolder('Custom Font Colors');
 var conFontCustomEnable = f11.add(con, 'fontCustomEnable');
