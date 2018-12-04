@@ -80,9 +80,11 @@ function hslToHex(hsl) {
 
 // initialize variables
 var gain = 5;
-var brick, cube, colorBrick, dimensionBrick, colorCube, dimensionCube
+var brick, cube, colorBrick, dimensionBrick, colorCube, dimensionCube, request;
+
 // build method
 function buildPrimitive() {
+
 	// automatic changes
 	if(con.autoHeight){
 		let newHeight = con.fontHeight + gain;
@@ -90,9 +92,10 @@ function buildPrimitive() {
 			gain *= -1;
 		}
 		con.fontHeight += gain;
-		//requestAnimationFrame( main );
-		setTimeout(main, 1000/30);
-
+		request  = requestAnimationFrame( main );
+		//setTimeout(main, 1000/30);
+	}else{
+		cancelAnimationFrame(request);
 	}
 	
     // parameters
@@ -173,6 +176,8 @@ function draw() {
 			}
 		}
 	}
+
+	
 }
 
 // main
